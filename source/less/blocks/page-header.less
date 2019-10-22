@@ -7,9 +7,18 @@ border: solid 2px red;
 .page-header__logo {
   height: 85px;
   border: solid 1px blue;
+  background: rgba(255, 255, 255, 0.5);
 }
 
-.nav-mock {
-  /* Временно для сетки */
-  min-height: 310px;
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    order: 2;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    height: 648px;
+  }
 }
