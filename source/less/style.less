@@ -1,35 +1,22 @@
-@import "fonts.less";
-@import "blocks/button.less";
-@import "blocks/nav.less";
-@import "blocks/list.less";
-@import "blocks/intro.less";
-@import "blocks/advantages.less";
-@import "blocks/advantages-list.less";
-@import "blocks/tips.less";
-@import "blocks/book.less";
-@import "blocks/footer.less";
-@import "blocks/teg.less";
-@import "blocks/social.less";
-@import "blocks/copyright.less";
-@import "blocks/intro-not-index.less";
-@import "blocks/intro-photo.less";
-@import "blocks/photo";
-@import "blocks/gallery.less";
-@import "blocks/video.less";
-@import "blocks/review.less";
-@import "blocks/form.less";
+@import "blocks/page-header.less";
+@import "variables.less";
+@import "outlines.less";
 
 body {
-  background-color: #ffffff;
-  font-family: @font-ptsans;
-
-  width: 100%;
-}
-
-.container {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
+  margin: 0;
   padding: 0;
 
-  border: 1px solid green;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Arial", sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+
+  background-color: @bg-lightgrey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
