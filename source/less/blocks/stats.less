@@ -1,0 +1,66 @@
+.stats {
+  width: 320px;
+  margin: 0 auto;
+
+  /* Временно для сетки */
+  min-height: 570px;
+
+  border: 1px solid grey;
+}
+
+.stats__header {
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+
+  /* Временно для сетки */
+  min-height: 130px;
+
+  border: 1px dotted grey;
+}
+
+.stats__list {
+  /* Задаем 100 % ширину, чтоб таблица не сжималась под контент */
+  width: 100%;
+
+  /* Временно для сетки */
+  /* Таблица не реагирует на min-height */
+  height: 320px;
+
+  border: 1px dotted grey;
+}
+
+@media (min-width: @tablet-width) {
+  .stats {
+    width: 640px;
+    margin-top: -185px;
+
+    /* Временно для сетки */
+    min-height: 0;
+  }
+
+  .stats__list {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stats {
+    display: flex;
+    width: 960px;
+    margin-top: -160px;
+  }
+
+  .stats__header {
+    width: 240px;
+
+  /* Временно для сетки */
+  min-height: 263px;
+  }
+
+  .stats__list {
+    /*  Переопределяем ширину, чтоб не растягивался на 100% как в мобильной версии */
+    width: 640px;
+  }
+}
