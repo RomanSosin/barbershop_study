@@ -4,6 +4,21 @@
 @import "variables.less";
 @import "outlines.less";
 
+/* Файл scaffolding.less */
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("fonts/PTSansNarrow.woff2") format("woff2"), url("fonts/PTSansNarrow.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("fonts/PTSansNarrowBold.woff2") format("woff2"), url("fonts/PTSansNarrowBold.woff") format("woff");
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -19,6 +34,6 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100%; /* Защищает от переполнения картинками */
   height: auto;
 }
