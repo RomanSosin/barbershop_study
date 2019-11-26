@@ -1,8 +1,10 @@
 .main-nav {
   position: relative;
-  width: 320px;
+  /* width: 320px;
+  margin: 0 auto; */
+
+  width: auto; /* Для резиновой верстки */
   min-height: 51px; /* Нужна при открытом состоянии main-nav__wrapper чтоб при display: absolute не уменьшался */
-  margin: 0 auto;
 
   background-color: #826550;
 }
@@ -166,7 +168,10 @@
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 640px;
+
+    /* width: 640px; */
+    width: 84%; /* Резиновая верстка */
+    max-width: 960px; /* 960px / 0.84 ~ =1142px (центровка начнеться чуть раньше 1200px desktop */
     margin: 0 auto;
   }
 
@@ -177,6 +182,6 @@
 
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
-    width: 960px;
+  /* width: 960px; На резиновой верстке можем убрать */
   }
 }
